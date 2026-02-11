@@ -12,7 +12,7 @@ assert driver.title == "Google", "Title is not Google"
 
 driver.find_element(By.NAME, "q").send_keys("naveen automationlabs")
 search_options_list = driver.find_elements(By.CSS_SELECTOR, "ul.G43f7e li")
-print("Length of the list : ",len(search_options_list))
+print("Length of the list : ", len(search_options_list))
 
 for elem in search_options_list:
     print(elem.text)
